@@ -8,11 +8,11 @@ env/
 *.venv
 
 # Django migrations (isteğe bağlı)
-*/migrations/*.pyc
-*/migrations/__pycache__/
+api/migrations/*.pyc
+api/migrations/__pycache__/
 
 # SQLite dosyaları (eğer kullanıyorsan)
-db.sqlite3
+.db.sqlite3
 
 # Log dosyaları
 *.log
