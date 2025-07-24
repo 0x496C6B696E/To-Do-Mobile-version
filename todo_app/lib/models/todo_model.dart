@@ -1,11 +1,19 @@
 class Todo {
-  final String id;
+  final int id;
   final String title;
-  bool isDone;
+  final bool isCompleted;
 
   Todo({
     required this.id,
     required this.title,
-    this.isDone = false,
+    required this.isCompleted,
   });
+
+  factory Todo.fromJson(Map<String, dynamic> json) {
+    return Todo(
+      id: json['id'],
+      title: json['title'],
+      isCompleted: json['is_completed'],
+    );
+  }
 }
