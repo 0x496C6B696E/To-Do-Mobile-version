@@ -1,0 +1,31 @@
+# Python cache dosyaları
+__pycache__/
+*.pyc
+
+# Sanal ortam dosyaları
+venv/
+env/
+*.venv
+
+# Django migrations (isteğe bağlı)
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# SQLite dosyaları (eğer kullanıyorsan)
+db.sqlite3
+
+# Log dosyaları
+*.log
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Docker Compose volumeleri
+*.pid
+
+# Django secret key dosyaları veya ortam değişkenleri (örnek)
+.env
+
